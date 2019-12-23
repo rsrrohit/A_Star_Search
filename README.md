@@ -2,10 +2,14 @@
 Implemented A start search algorithm for finding a shortest path between any two US cities.
 
 program should be run on the command line like this:
+
 ./route.py [start-city] [end-city] [cost-function]
 where:
+
 • start-city and end-city are the cities we need a route between (format given in road-segments.txt). e.g. New_York,_New_York and Los_Angeles,_California
+
 • cost-function is one of following:
+
 segments - It tries to find a route with the fewest number of "turns" (i.e. edges of the graph)
 distance - It tries to find a route with the shortest total distance
 time - It tries to find the fastest route, for a car that always travels at the speed limit
