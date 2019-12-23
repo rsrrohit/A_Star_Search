@@ -11,8 +11,11 @@ where:
 • cost-function is one of following:
 
 segments - It tries to find a route with the fewest number of "turns" (i.e. edges of the graph)
+
 distance - It tries to find a route with the shortest total distance
+
 time - It tries to find the fastest route, for a car that always travels at the speed limit
+
 mpg - It tries to find the most economical route, for a car that always travels at the speed limit and
 whose mileage per gallon (MPG) is a function of its velocity (in miles per hour), as follows:
 MPG(v) = 400 * v/150 * (1 − v/150)^4
@@ -20,6 +23,7 @@ MPG(v) = 400 * v/150 * (1 − v/150)^4
 The output of the program is a nicely-formatted, human-readable list of directions, including travel
 times, distances, intermediate cities, and highway names, similar to what Google Maps or another site might
 produce. In addition, the last line of output has the following output about the route:
+
 [total-segments] [total-miles] [total-hours] [total-gas-gallons] [start-city] [city-1] [city-2] ... [end-city]
 
 Extra files:-
